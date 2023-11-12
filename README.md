@@ -8,13 +8,27 @@ Website: https://developer.twitter.com/en
 
 ### Using Twitter API
 
-    1º Step: Let's go to Twitter developer website. Then, create a user and justify because they are education goals. 
+    1º Step: Let's go to Twitter developer website. Then, create a user and justify because they are 
+    education goals. 
 
-    2° Step: After that, you'll create a new project in Dashboard part - without him, you won't make a new application.
+    2° Step: After that, you'll create a new project in Dashboard part - without him, you won't 
+    make a new application.
     
-    3° Step: Creating an Application, define your app name and getting keys (API key, API key Secret and Bearer Token). Finally, key save your keys.
+    3° Step: Creating an Application, define your app name and getting keys (API key, API key 
+    Secret and Bearer Token). Finally, key save your keys.
 
-    note: When you create your keys, that's the only one moment you'll see them. If you forget, you'll need delete your app and create new one. I recommend you creating a .txt file with your keys and save it in your local folder, but don't forget put in gitignore file too.
+    note: When you create your keys, that's the only one moment you'll see them. If you forget, 
+    you'll need delete your app and create new one. I recommend you creating a .txt file with your 
+    keys and save it in your local folder, but don't forget put in gitignore file too.
+
+#### Creating APP
+
+![creating_app](images\creating_app_tt.png)
+
+#### Getting API Keys
+
+![api_keys](images\api_keys_tt.png)
+
 
 ## Technologies Used
 - Twitter API
