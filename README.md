@@ -23,11 +23,11 @@ Website: https://developer.twitter.com/en
 
 #### Creating APP
 
-![creating_app](./images/creating_app_tt.png)
+![creating_app](./images/creating_app_tt.PNG)
 
 #### Getting API Keys
 
-![api_keys](./images/api_keys_tt.png)
+![api_keys](./images/api_keys_tt.PNG)
 
 
 ## Technologies Used
