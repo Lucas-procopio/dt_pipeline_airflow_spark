@@ -126,5 +126,5 @@ https://medium.com/@lupiel/installing-python-from-a-tgz-file-a-step-by-step-guid
 - linux ubuntu 22.04
 - pip package version
 - Python3.10.12
-- Apache Aiflow
+- Apache Aiflow 2.7.3
 - Spark 

@@ -1,0 +1,20 @@
+import requests
+import os
+import json
+
+# To set your environment variables in your terminal run the following line:
+# export 'BEARER_TOKEN'='<your_bearer_token>'
+bearer_token = os.environ.get("BEARER_TOKEN")
+
+search_url = "https://api.twitter.com/2/tweets/search/recent"
+
+# Optional params: start_time, end_time, since_id, until_id, max_results, next_token,
+# expansions, tweet.fields, media.fields, poll.fields, place.fields, user.fields
+query_params = {'query': '(from:twitterdev -is:retweet) OR #twitterdev', 'tweet.fields': 'author_id'}
+
+def bearer_oauth(r):
+    "Method required by bearer token authentication."
+
+    r.headers["Authorization"] = f"Bearer {bearer_oauth}"
+    r.headers["User-Agent"] = "v2RecentSearchPython"
+    return r
