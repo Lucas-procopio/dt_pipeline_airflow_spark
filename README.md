@@ -47,7 +47,7 @@ https://medium.com/thesecmaster/step-by-step-procedure-to-install-ubuntu-linux-o
         In python.org (https://www.python.org/downloads/), you can see every activate version for languague. Then download now Python-3.10.12.tgz. 
         After that, create new global variables
 
-    Variables:
+    Global Variables:
         export PYTHON_VERSION=3.10.12
         export PÝTHON_MAJOR=3
 
@@ -67,14 +67,30 @@ https://medium.com/thesecmaster/step-by-step-procedure-to-install-ubuntu-linux-o
         make
         sudo make install
 
-    Verify the Installation:
+    Making new version default (Optinal):
         cd /opt/python/${PYTHON_VERSION}/bin
         sudo ln -s python3.10.12 python
         echo "PATH=/opt/python/3.10.12/bin/:$""PATH" >> ~/.profile
-        .~/.profile 
+        .~/.profile
+
+    Verify the Installation version:
+        python3 --version
+
+NOTE: 
+https://medium.com/@lupiel/installing-python-from-a-tgz-file-a-step-by-step-guide-4cf5f4a17a86
+
+### Installing pip
+
+    Install: 
+        $python get-pip.py
+    Upgrade: 
+        python -m pip install --upgrade pip
+
 
 ### Installing Airflow
 
+    Global Variables:
+        export AIRFLOW_HOME=$(pwd)/airflow
 
 
 ## Technologies Used
