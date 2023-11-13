@@ -91,11 +91,40 @@ https://medium.com/@lupiel/installing-python-from-a-tgz-file-a-step-by-step-guid
 
     Global Variables:
         export AIRFLOW_HOME=$(pwd)/airflow
+        export AIRFLOW_VERSION=2.7.3
+        export PYTHON_VERSION="$(python --version | cut -d " " -f 2 | cut -d "." -f 1-2)"
+        export CONSTRAINT_URL="https://raw.githubusercontent.com/apache/airflow/constraints-${AIRFLOW_VERSION}/constraints-${PYTHON_VERSION}.txt"
+    
+    Install using constraints file:
+        pip install "apache-airflow==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT_URL}"
+    
+    Initialize:
+        1° The database and create user with all components:
+            airflow standalone
 
+        2° If you want Run all individuals parts one-by-one:
+            airflow db migrate
+
+            airflow db init
+
+            airflow users create \
+                --username USERNAME \
+                --firstname FIRSTNAME \
+                --lastname LASTNAME \
+                --role Admin \
+                --email example@gmail.com
+            
+            airflow webserver --port 8080
+
+            airflow scheduler
+    
+    Finish process in port:
+        fuser -k 8080/tcp
 
 ## Technologies Used
 - Twitter API
 - linux ubuntu 22.04
+- pip package version
 - Python3.10.12
 - Apache Aiflow
 - Spark 
