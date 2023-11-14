@@ -47,9 +47,9 @@ https://medium.com/thesecmaster/step-by-step-procedure-to-install-ubuntu-linux-o
         In python.org (https://www.python.org/downloads/), you can see every activate version for languague. Then download now Python-3.10.12.tgz. 
         After that, create new global variables
 
-    Global Variables:
+    Envorinment variables:
         export PYTHON_VERSION=3.10.12
-        export PÝTHON_MAJOR=3
+        export PYTHON_MAJOR=3
 
     Extracting Tgz file:
         tar -xvzf Python-${PYTHON_VERSION}.tgz
@@ -89,7 +89,7 @@ https://medium.com/@lupiel/installing-python-from-a-tgz-file-a-step-by-step-guid
 
 ### Installing Airflow
 
-    Global Variables:
+    Envorinment variables:
         export AIRFLOW_HOME=$(pwd)/airflow
         export AIRFLOW_VERSION=2.7.3
         export PYTHON_VERSION="$(python --version | cut -d " " -f 2 | cut -d "." -f 1-2)"
@@ -120,6 +120,16 @@ https://medium.com/@lupiel/installing-python-from-a-tgz-file-a-step-by-step-guid
     
     Finish process in port:
         fuser -k 8080/tcp
+
+# Connecting Twitter
+
+    Envorinment variables:
+        export BEARER_TOKEN=your_bearer_token_keys
+
+    How connect:
+        https://github.com/twitterdev/Twitter-API-v2-sample-code/blob/main/Recent-Search/recent_search.py
+
+
 
 ## Technologies Used
 - Twitter API
